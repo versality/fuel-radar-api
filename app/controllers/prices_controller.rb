@@ -10,7 +10,8 @@ get '/prices' do
 
   prices = [
     Neste.new.prices,
-    Statoil.new.prices
+    Statoil.new.prices,
+    LNafta.new.prices
   ]
 
   prices.inject(&:merge).to_json
