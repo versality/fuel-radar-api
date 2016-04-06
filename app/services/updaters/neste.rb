@@ -23,7 +23,7 @@ class Neste
           address: second[2].text
         },
 
-        'D' => {
+        'd' => {
           price: /[\d\.\,]*/.match(third[1].text)[0].to_f,
           address: third[2].text
         }

@@ -20,7 +20,7 @@ class LNafta
           address: gas_address.text
         },
 
-        'D' => {
+        'd' => {
           price: /[\d\.\,]*/.match(d_price.text)[0].to_f,
           address: d_address.text
         }
