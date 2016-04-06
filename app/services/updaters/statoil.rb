@@ -21,17 +21,17 @@ class Statoil
           address: /(?<=\()(.*)(?=\))/.match(column[3].text)[0]
         },
 
-        'diesel' => {
+        'D' => {
           price: /[\d\.\,]*/.match(column[4].text)[0].to_f,
           address: /(?<=\()(.*)(?=\))/.match(column[5].text)[0]
         },
 
-        'diesel plus' => {
+        'D Plus' => {
           price: /[\d\.\,]*/.match(column[6].text)[0].to_f,
           address: /(?<=\()(.*)(?=\))/.match(column[7].text)[0]
         },
 
-        'gas' => {
+        'Gas' => {
           price: /[\d\.\,]*/.match(column[8].text)[0].to_f,
           address: /(?<=\()(.*)(?=\))/.match(column[9].text)[0]
         }
