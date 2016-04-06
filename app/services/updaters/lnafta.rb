@@ -3,7 +3,7 @@ require 'nokogiri'
 
 class LNafta
   def initialize
-    @doc = Nokogiri::HTML(open('http://www.lnafta.lv/lv/start/aktualitates-latvijasnafta'))
+    @doc = Nokogiri::HTML(open('http://www.lnafta.lv/lv/start/aktualitates-latvijasnafta').read)
   end
 
   def prices

@@ -26,7 +26,7 @@ class Statoil
           address: /(?<=\()(.*)(?=\))/.match(column[5].text)[0]
         },
 
-        'd plus' => {
+        'd+' => {
           price: /[\d\.\,]*/.match(column[6].text)[0].to_f,
           address: /(?<=\()(.*)(?=\))/.match(column[7].text)[0]
         },
