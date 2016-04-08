@@ -16,11 +16,6 @@ class Statoil
           address: /(?<=\()(.*)(?=\))/.match(column[1].text)[0]
         },
 
-        '98' => {
-          price: /[\d\.\,]*/.match(column[2].text)[0].to_f,
-          address: /(?<=\()(.*)(?=\))/.match(column[3].text)[0]
-        },
-
         'd' => {
           price: /[\d\.\,]*/.match(column[4].text)[0].to_f,
           address: /(?<=\()(.*)(?=\))/.match(column[5].text)[0]
@@ -29,6 +24,11 @@ class Statoil
         'd+' => {
           price: /[\d\.\,]*/.match(column[6].text)[0].to_f,
           address: /(?<=\()(.*)(?=\))/.match(column[7].text)[0]
+        },
+
+        '98' => {
+          price: /[\d\.\,]*/.match(column[2].text)[0].to_f,
+          address: /(?<=\()(.*)(?=\))/.match(column[3].text)[0]
         },
 
         'gas' => {

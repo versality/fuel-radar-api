@@ -18,14 +18,14 @@ class Neste
           address: first[2].text
         },
 
-        '98' => {
-          price: /[\d\.\,]*/.match(second[1].text)[0].to_f,
-          address: second[2].text
-        },
-
         'd' => {
           price: /[\d\.\,]*/.match(third[1].text)[0].to_f,
           address: third[2].text
+        },
+
+        '98' => {
+          price: /[\d\.\,]*/.match(second[1].text)[0].to_f,
+          address: second[2].text
         }
       }
     }
